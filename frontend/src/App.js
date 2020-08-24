@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from './components/Header';
 
@@ -7,24 +7,31 @@ import Header from './components/Header';
     Componente
     Propriedade
     Estado & Imutabilidade
+
 */
 
 function App() {
+  const [projects, setProjects] = useState(['Desenvolvimento de app', 'Front-end web']);
+
+  // useState retorna um array com 2 posições:
+  // 2. Variável com o seu valor inicial
+  // 3. Função para atualizarmos esse valor
+
+  function handleAddProject() {
+    setProjects([...projects, `Novo projeto ${Date.now()}`]); //gera um novo array; ...projects vai percorrer todo meu array de projects e copiar cada projeto para dentro do meu array
+
+    console.log(projects);
+  }
+
   return (
     <> 
-      <Header title="Homepage">
-        <ul>
-          <li>Homepage</li>
-          <li>Projects</li>
-        </ul>
-      </Header>
-      <Header title="Projects">
-        <ul>
-          <li>Homepage</li>
-          <li>Projects</li>
-          <li>Login</li>
-        </ul>
-      </Header>
+      <Header title="Projects" />
+       
+      <ul> 
+        {projects.map(project => <li key={project}>{project}</li>)}
+
+        <button type="button" onClick={handleAddProject}>Adicionar projeto</button>
+      </ul>
     </>
   );
 }
