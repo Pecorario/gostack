@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ../node_modules/babel-loader/lib/index.js):\\nError: Cannot find module '@babel/core'\\nRequire stack:\\n- /home/taynara/dev/gostack/node_modules/babel-loader/lib/index.js\\n- /home/taynara/dev/gostack/frontend/node_modules/loader-runner/lib/loadLoader.js\\n- /home/taynara/dev/gostack/frontend/node_modules/loader-runner/lib/LoaderRunner.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModule.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModuleFactory.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/Compiler.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/webpack.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack-cli/bin/utils/validate-options.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack-cli/bin/utils/convert-argv.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack-cli/bin/cli.js\\n- /home/taynara/dev/gostack/frontend/node_modules/webpack/bin/webpack.js\\n babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:965:15)\\n    at Function.Module._load (internal/modules/cjs/loader.js:841:27)\\n    at Module.require (internal/modules/cjs/loader.js:1025:19)\\n    at require (/home/taynara/dev/gostack/frontend/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)\\n    at Object.<anonymous> (/home/taynara/dev/gostack/node_modules/babel-loader/lib/index.js:10:11)\\n    at Module._compile (/home/taynara/dev/gostack/frontend/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)\\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\\n    at Module.load (internal/modules/cjs/loader.js:985:32)\\n    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\\n    at Module.require (internal/modules/cjs/loader.js:1025:19)\\n    at require (/home/taynara/dev/gostack/frontend/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)\\n    at loadLoader (/home/taynara/dev/gostack/frontend/node_modules/loader-runner/lib/loadLoader.js:18:17)\\n    at iteratePitchingLoaders (/home/taynara/dev/gostack/frontend/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\\n    at runLoaders (/home/taynara/dev/gostack/frontend/node_modules/loader-runner/lib/LoaderRunner.js:365:2)\\n    at NormalModule.doBuild (/home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModule.js:295:3)\\n    at NormalModule.build (/home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModule.js:446:15)\\n    at Compilation.buildModule (/home/taynara/dev/gostack/frontend/node_modules/webpack/lib/Compilation.js:739:10)\\n    at /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/Compilation.js:1111:12\\n    at /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModuleFactory.js:409:6\\n    at /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModuleFactory.js:155:13\\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (/home/taynara/dev/gostack/frontend/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:4:1)\\n    at AsyncSeriesWaterfallHook.lazyCompileHook (/home/taynara/dev/gostack/frontend/node_modules/tapable/lib/Hook.js:154:20)\\n    at /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModuleFactory.js:138:29\\n    at /home/taynara/dev/gostack/frontend/node_modules/webpack/lib/NormalModuleFactory.js:346:9\\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)\");\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _soma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./soma */ \"./src/soma.js\");\n\nconsole.log(Object(_soma__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 3));\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/soma.js":
+/*!*********************!*\
+  !*** ./src/soma.js ***!
+  \*********************/
+/*! exports provided: soma */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\nvar soma = function soma(a, b) {\n  return a + b;\n};\n\n//# sourceURL=webpack:///./src/soma.js?");
 
 /***/ })
 
