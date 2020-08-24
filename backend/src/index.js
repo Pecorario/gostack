@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const { v4, validate } = require('uuid'); // universal unique id
 
 const app = express();
 
+app.use(cors()); //permite q qlqr forntend tenha acesso a esse backend
 app.use(express.json());
 
 /*
