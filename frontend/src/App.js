@@ -24,11 +24,19 @@ function App() {
     api.get('projects').then(response => {
       setProjects(response.data);
     });
-  }, []); //recebe 2 parametros: 1. qual função quero disparar; 2. quando quero disparar essa função?
+  }, []); // recebe 2 parametros: 1. qual função quero disparar; 2. quando quero disparar essa função?
   
-  function handleAddProject() {
-    setProjects([...projects, `Novo projeto ${Date.now()}`]); //gera um novo array; ...projects vai percorrer todo meu array de projects e copiar cada projeto para dentro do meu array
+  async function handleAddProject() {
+    // setProjects([...projects, `Novo projeto ${Date.now()}`]); // gera um novo array; ...projects vai percorrer todo meu array de projects e copiar cada projeto para dentro do meu array
 
+    const response = await api.post('projects', {
+      title: `Novo projeto ${Date.now()}`,
+	    owner: "Taynara Pecorario"
+    });
+    
+    const project = response.data;
+
+    setProjects([...projects, project]);
   }
 
   return (
