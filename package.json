@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "backend": "^0.0.0",
+    "frontend": "^2.0.0-alpha.4",
+    "mobile": "^0.0.1",
+    "typescript": "^4.0.2"
+  }
+}
